@@ -5,21 +5,21 @@ import junit.framework.TestCase;
 
 /**
  * 
- * Euler_1—pƒeƒXƒgƒNƒ‰ƒX
+ * Euler_1ç”¨ãƒ†ã‚¹ãƒˆã‚¯ãƒ©ã‚¹
  */
 public class TestEuler_1 extends TestCase {
 	
 	/**
-	 * @link {@link Euler_1#getSum(int)}‚Ì‚½‚ß‚ÌƒeƒXƒgƒƒ\ƒbƒhB
-	 * 1“n‚³‚ê‚é‚Æ0‚ª•Ô‚¦‚é‚ç‚µ‚¢
+	 * @link {@link Euler_1#getSum(int)}ã®ãŸã‚ã®ãƒ†ã‚¹ãƒˆãƒ¡ã‚½ãƒƒãƒ‰ã€‚
+	 * 1æ¸¡ã•ã‚Œã‚‹ã¨0ãŒè¿”ãˆã‚‹ã‚‰ã—ã„
 	 */
 	public void testGetSum_1(){
 		assertEquals(0, Euler_1.getSum(1));
 	}
 	
 	/**
-	 * @link {@link Euler_1#getSum(int)}‚Ì‚½‚ß‚ÌƒeƒXƒgƒƒ\ƒbƒhB
-	 * 10“n‚³‚ê‚é‚Æ23‚ª•Ô‚¦‚é‚ç‚µ‚¢
+	 * @link {@link Euler_1#getSum(int)}ã®ãŸã‚ã®ãƒ†ã‚¹ãƒˆãƒ¡ã‚½ãƒƒãƒ‰ã€‚
+	 * 10æ¸¡ã•ã‚Œã‚‹ã¨23ãŒè¿”ãˆã‚‹ã‚‰ã—ã„
 	 */
 	public void testGetSum_2(){
 		assertEquals(23, Euler_1.getSum(10));

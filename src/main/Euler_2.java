@@ -5,11 +5,11 @@ import java.util.Iterator;
 
 /**
  * NO.2
- * ƒtƒBƒ{ƒiƒbƒ`”—ñ‚Ì€‚Í‘O‚Ì2‚Â‚Ì€‚Ì˜a‚Å‚ ‚éB
- * Å‰‚Ì2€‚ğ 1, 2 ‚Æ‚·‚ê‚ÎA
- * Å‰‚Ì10€‚ÍˆÈ‰º‚Ì’Ê‚è‚Å‚ ‚éB
- * ”—ñ‚Ì€‚Ì’l‚ª400–œ‚ğ’´‚¦‚È‚¢”ÍˆÍ‚ÅA
- * ‹ô”’l‚Ì€‚Ì‘˜a‚ğ‹‚ß‚æB
+ * ãƒ•ã‚£ãƒœãƒŠãƒƒãƒæ•°åˆ—ã®é …ã¯å‰ã®2ã¤ã®é …ã®å’Œã§ã‚ã‚‹ã€‚
+ * æœ€åˆã®2é …ã‚’ 1, 2 ã¨ã™ã‚Œã°ã€
+ * æœ€åˆã®10é …ã¯ä»¥ä¸‹ã®é€šã‚Šã§ã‚ã‚‹ã€‚
+ * æ•°åˆ—ã®é …ã®å€¤ãŒ400ä¸‡ã‚’è¶…ãˆãªã„ç¯„å›²ã§ã€
+ * å¶æ•°å€¤ã®é …ã®ç·å’Œã‚’æ±‚ã‚ã‚ˆã€‚
  * 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
  *
  */
@@ -32,7 +32,7 @@ public class Euler_2 {
 						+ (int) fivonattilist.get(fivonattilist.size() - 1));
 				System.out.println("[" + i + "] " + fivonattilist.get(fivonattilist.size() -1));
 				if(fivonattilist.get(fivonattilist.size()-1) > 4000000){
-					System.out.println(i + "‚Å‚·‚æ");
+					System.out.println(i + "ã§ã™ã‚ˆ");
 					fivonattilist.remove(fivonattilist.size() - 1);
 					return fivonattilist;
 				}
@@ -42,7 +42,7 @@ public class Euler_2 {
 		return fivonattilist;
 	}
 	public static void main(String[] args){
-//		// Å‘å’l‚¢‚­‚Â‚È‚ñ‚Å‚·‚©
+//		// æœ€å¤§å€¤ã„ãã¤ãªã‚“ã§ã™ã‹
 //		System.out.println(Integer.MAX_VALUE);
 		
 		int sum = 0;

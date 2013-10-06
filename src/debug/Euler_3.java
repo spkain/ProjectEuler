@@ -4,26 +4,26 @@ import java.util.ArrayList;
 
 /**
  * NO.3
- *13195 ‚Ì‘fˆö”‚Í 5A7A13A29 ‚Å‚ ‚éB
- *600851475143 ‚Ì‘fˆö”‚Ì‚¤‚¿Å‘å‚Ì‚à‚Ì‚ğ‹‚ß‚æB 
+ *13195 ã®ç´ å› æ•°ã¯ 5ã€7ã€13ã€29 ã§ã‚ã‚‹ã€‚
+ *600851475143 ã®ç´ å› æ•°ã®ã†ã¡æœ€å¤§ã®ã‚‚ã®ã‚’æ±‚ã‚ã‚ˆã€‚ 
  *
- * ›‘fˆö”‚Á‚ÄH
- * ‘fˆö”i‚»‚¢‚ñ‚·‚¤A‰p: prime factorj‚ÍA©‘R”‚Ì“àA‚ ‚é©‘R”‚Ì–ñ”‚É‚È‚é‘f”‚Å‚ ‚é
- * (wikipedia’²‚×)
+ * â—‹ç´ å› æ•°ã£ã¦ï¼Ÿ
+ * ç´ å› æ•°ï¼ˆãã„ã‚“ã™ã†ã€è‹±: prime factorï¼‰ã¯ã€è‡ªç„¶æ•°ã®å†…ã€ã‚ã‚‹è‡ªç„¶æ•°ã®ç´„æ•°ã«ãªã‚‹ç´ æ•°ã§ã‚ã‚‹
+ * (wikipediaèª¿ã¹)
  * 
- * ›‘f”‚Á‚ÄH
- * ‘f”i‚»‚·‚¤A‰p: prime numberj‚Æ‚ÍA1‚Æ‚»‚Ì”©gˆÈŠO‚É³‚Ì–ñ”‚ª‚È‚¢A
- * 1 ‚æ‚è‘å‚«‚È©‘R”‚Ì‚±‚Æ
- * (wikipedia’²‚×)
+ * â—‹ç´ æ•°ã£ã¦ï¼Ÿ
+ * ç´ æ•°ï¼ˆãã™ã†ã€è‹±: prime numberï¼‰ã¨ã¯ã€1ã¨ãã®æ•°è‡ªèº«ä»¥å¤–ã«æ­£ã®ç´„æ•°ãŒãªã„ã€
+ * 1 ã‚ˆã‚Šå¤§ããªè‡ªç„¶æ•°ã®ã“ã¨
+ * (wikipediaèª¿ã¹)
  * 
  */
 public class Euler_3 {
 
 	/**
-	 * ‘f””»’è—pƒƒ\ƒbƒh
-	 * ‚ß‚ñ‚Ç‚¢‚©‚çlong‚ÌÅ‘å’·‚Ü‚Å‚µ‚©‚â‚ç‚È‚¢‚æ
-	 * @param ”’l
-	 * @return ‘f”‚Å‚ ‚ê‚ÎtrueA‚»‚¤‚Å‚È‚¢ê‡‚Ífalse
+	 * ç´ æ•°åˆ¤å®šç”¨ãƒ¡ã‚½ãƒƒãƒ‰
+	 * ã‚ã‚“ã©ã„ã‹ã‚‰longã®æœ€å¤§é•·ã¾ã§ã—ã‹ã‚„ã‚‰ãªã„ã‚ˆ
+	 * @param æ•°å€¤
+	 * @return ç´ æ•°ã§ã‚ã‚Œã°trueã€ãã†ã§ãªã„å ´åˆã¯false
 	 */
 	public static boolean isPrime(long arg){
 		
@@ -35,20 +35,20 @@ public class Euler_3 {
 			return false;
 		}
 		
-		// 1‚Í‘f”
+		// 1ã¯ç´ æ•°
 		if (arg == 1){
 			return true;
 		}
 
 		for(long i = 3; i <= Math.sqrt(arg); i=i+2){
 			
-			// “r’†‚ÅŠ„‚èØ‚ê‚é‚©‚Ç‚¤‚©
+			// é€”ä¸­ã§å‰²ã‚Šåˆ‡ã‚Œã‚‹ã‹ã©ã†ã‹
 			if((arg % i == 0) && (i != arg)){
 				return false;
 			}
 		}
 		
-		// ‘f”
+		// ç´ æ•°
 		return true;
 	}
 	
@@ -61,14 +61,14 @@ public class Euler_3 {
 			if ((arg % i) == 0) return false;
 		}
 		
-		// ‘f”
+		// ç´ æ•°
 		return true;
 	}
 	
 	public static ArrayList<Long> getPrimeList2(long arg){
 		ArrayList<Long> primeList = new ArrayList<Long>();
 		
-		// ‚Q‚Ìê‡‚Í‚»‚Ì‚Ü‚Ü‚Q‚ğ•Ô‹p
+		// ï¼’ã®å ´åˆã¯ãã®ã¾ã¾ï¼’ã‚’è¿”å´
 		if(arg == 2){
 			primeList.add((long)2);
 			
@@ -80,7 +80,7 @@ public class Euler_3 {
 			arg = arg / 2;
 		}
 		
-		// “n‚³‚ê‚½”’l‚ğ‚Ğ‚½‚·‚ç‘f”‚ÅŠ„‚è‘±‚¯‚Ü‚·
+		// æ¸¡ã•ã‚ŒãŸæ•°å€¤ã‚’ã²ãŸã™ã‚‰ç´ æ•°ã§å‰²ã‚Šç¶šã‘ã¾ã™
 		for (int i = 3; i <= arg; i=i+2){
 				if(arg % i == 0){
 					primeList.add((long)i);
@@ -97,21 +97,21 @@ public class Euler_3 {
 	}
 
 	/**
-	 * ‘fˆö”•ª‰ğ‚ğs‚¢‚í‚ê‚½‘fˆö”‚ÌƒŠƒXƒg‚ğ•Ô‹p‚·‚é
-	 * @param ”’l
-	 * @return ‘fˆö”•ª‰ğ‚ÌƒŠƒXƒg
+	 * ç´ å› æ•°åˆ†è§£ã‚’è¡Œã„ã‚ã‚ŒãŸç´ å› æ•°ã®ãƒªã‚¹ãƒˆã‚’è¿”å´ã™ã‚‹
+	 * @param æ•°å€¤
+	 * @return ç´ å› æ•°åˆ†è§£ã®ãƒªã‚¹ãƒˆ
 	 */
 	public static ArrayList<Long> getPrimeList(long arg){
 		ArrayList<Long> primeList = new ArrayList<Long>();
 		
-		// ‚Q‚Ìê‡‚Í‚»‚Ì‚Ü‚Ü‚Q‚ğ•Ô‹p
+		// ï¼’ã®å ´åˆã¯ãã®ã¾ã¾ï¼’ã‚’è¿”å´
 		if(arg == 2){
 			primeList.add((long)2);
 			
 			return primeList;
 		}
 		
-		// “n‚³‚ê‚½”’l‚ğ‚Ğ‚½‚·‚ç‘f”‚ÅŠ„‚è‘±‚¯‚Ü‚·
+		// æ¸¡ã•ã‚ŒãŸæ•°å€¤ã‚’ã²ãŸã™ã‚‰ç´ æ•°ã§å‰²ã‚Šç¶šã‘ã¾ã™
 		for (int i = 3; i <= Math.sqrt(arg); i=i+2){
 			if(arg % i == 0){
 				primeList.add((long)i);
@@ -131,7 +131,7 @@ public class Euler_3 {
 		ArrayList<Long> primeList = getPrimeList2(600851475143L);
 		long result = (long)primeList.get(primeList.size()-1);
 		System.out.println(primeList);
-		System.out.println("600851475143‚ÍH" + result);
+		System.out.println("600851475143ã¯ï¼Ÿ" + result);
 		
 		end = System.currentTimeMillis();
 		System.out.println((end - start) + "ms");

@@ -6,7 +6,7 @@ import junit.framework.TestCase;
 
 public class TestEuler_4 extends TestCase {
 
-	public void testgetPalindrome_2_3ˆÈŠO‚Í“ü—Í‚ğ‹‘â‚µ‚Ü‚·(){
+	public void testgetPalindrome_2_3ä»¥å¤–ã¯å…¥åŠ›ã‚’æ‹’çµ¶ã—ã¾ã™(){
 		assertEquals(0, Euler_4.getPalindrome(1));
 		assertEquals(0, Euler_4.getPalindrome(-1));
 		assertEquals(0, Euler_4.getPalindrome(4));
@@ -23,29 +23,29 @@ public class TestEuler_4 extends TestCase {
 	public void testspike(){
 		 //12421
 		 //981189
-		int ‰ñ•¶[] = new int[3];
-		‰ñ•¶[0] = 12421;
-		‰ñ•¶[1] = 981189;
-		‰ñ•¶[2] = 111112;
+		int å›æ–‡[] = new int[3];
+		å›æ–‡[0] = 12421;
+		å›æ–‡[1] = 981189;
+		å›æ–‡[2] = 111112;
 		int start,end;
 		start = 0;
-		end = String.valueOf(‰ñ•¶[0]).length();
+		end = String.valueOf(å›æ–‡[0]).length();
 		int kai= 0;
 		if(end % 2==0){
 			kai = end / 2;
 		}else{
 			kai = (end / 2) - 1;
 		}
-		System.out.println(String.valueOf(‰ñ•¶[0]).substring(start,start+1));
-		System.out.println(String.valueOf(‰ñ•¶[0]).substring(end-1,end));
+		System.out.println(String.valueOf(å›æ–‡[0]).substring(start,start+1));
+		System.out.println(String.valueOf(å›æ–‡[0]).substring(end-1,end));
 
 		
 		for(int i = 0; i< kai; i++){
-			if (String.valueOf(‰ñ•¶[0]).substring(start+i, start+i + 1).equals(
-					String.valueOf(‰ñ•¶[0]).substring(end-i - 1, end-i))) {
+			if (String.valueOf(å›æ–‡[0]).substring(start+i, start+i + 1).equals(
+					String.valueOf(å›æ–‡[0]).substring(end-i - 1, end-i))) {
 			}else{
 			
-				System.out.println("‰ñ•¶”ˆá‚¤");
+				System.out.println("å›æ–‡æ•°é•ã†");
 			}
 		}
 	}

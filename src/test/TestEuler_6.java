@@ -5,31 +5,31 @@ import main.Euler_6;
 
 public class TestEuler_6 extends TestCase {
 
-	public void test1‚¢‚ê‚½‚ç1–ß‚é‚¶‚á‚È‚¢‚Å‚·‚©() {
+	public void test1ã„ã‚ŒãŸã‚‰1æˆ»ã‚‹ã˜ã‚ƒãªã„ã§ã™ã‹() {
 		assertEquals(1, Euler_6.powerof(1));
 	}
 
-	public void test3‚¢‚ê‚½‚ç9–ß‚é‚¶‚á‚È‚¢‚Å‚·‚©() {
+	public void test3ã„ã‚ŒãŸã‚‰9æˆ»ã‚‹ã˜ã‚ƒãªã„ã§ã™ã‹() {
 		assertEquals(9, Euler_6.powerof(3));
 	}
 
-	public void test1‚©‚ç3‚Ü‚Å‚Ì“ñæ‚Ì”’l‚ğ‘«‚µ‡‚í‚¹‚é‚Æ14‚ª–ß‚é() {
+	public void test1ã‹ã‚‰3ã¾ã§ã®äºŒä¹—ã®æ•°å€¤ã‚’è¶³ã—åˆã‚ã›ã‚‹ã¨14ãŒæˆ»ã‚‹() {
 		assertEquals(14, Euler_6.addSum(3));
 	}
 
-	public void test1‚©‚ç5‚Ü‚Å‚Ì“ñæ‚Ì”’l‚ğ‘«‚µ‡‚í‚¹‚é‚Æ55‚ª–ß‚é() {
+	public void test1ã‹ã‚‰5ã¾ã§ã®äºŒä¹—ã®æ•°å€¤ã‚’è¶³ã—åˆã‚ã›ã‚‹ã¨55ãŒæˆ»ã‚‹() {
 		assertEquals(55, Euler_6.addSum(5));
 	}
 
-	public void test1‚©‚ç10‚Ü‚Å‚Ì“ñæ‚Ì”’l‚ğ‘«‚µ‡‚í‚¹‚é‚Æ385‚ª–ß‚é() {
+	public void test1ã‹ã‚‰10ã¾ã§ã®äºŒä¹—ã®æ•°å€¤ã‚’è¶³ã—åˆã‚ã›ã‚‹ã¨385ãŒæˆ»ã‚‹() {
 		assertEquals(385, Euler_6.addSum(10));
 	}
 
-	public void test1‚©‚ç10‚Ü‚Å‚Ì”’l‚ğ‘«‚µ‡‚í‚¹‚Ä“ñæ‚·‚é‚Æ3025‚É‚È‚é() {
+	public void test1ã‹ã‚‰10ã¾ã§ã®æ•°å€¤ã‚’è¶³ã—åˆã‚ã›ã¦äºŒä¹—ã™ã‚‹ã¨3025ã«ãªã‚‹() {
 		assertEquals(3025, Euler_6.addSumPowerOf(10));
 	}
 	
-	public void test1‚©‚ç10‚Ü‚Å‚Ì‘«‚µ‡‚í‚¹‚½Œã‚Ì“ñæ‚Ì˜a‚©‚ç“ñæ‚Ì˜a‚ğˆø‚­‚Æ2640() {
+	public void test1ã‹ã‚‰10ã¾ã§ã®è¶³ã—åˆã‚ã›ãŸå¾Œã®äºŒä¹—ã®å’Œã‹ã‚‰äºŒä¹—ã®å’Œã‚’å¼•ãã¨2640() {
 		assertEquals(2640, Euler_6.powerOfsMinusSumPowerOfs(10));
 	}
 

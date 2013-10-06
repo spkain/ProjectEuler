@@ -19,7 +19,7 @@ public class TestEuler_3 extends TestCase {
 		assertEquals(2, primeList.size());
 	}
 	
-	// *13195 ‚Ì‘fˆö”‚Í 5A7A13A29 ‚Å‚ ‚éB
+	// *13195 ã®ç´ å› æ•°ã¯ 5ã€7ã€13ã€29 ã§ã‚ã‚‹ã€‚
 	public void testGetPrimeList_13195(){
 		ArrayList<Long> primeList = Euler_3.getPrimeList2(13195);
 		System.out.println(primeList);
