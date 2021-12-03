@@ -3,4 +3,4 @@ ProjectEuler
 
 ProjectEuler samples
 
-licenses MIT
+MIT Lisense
